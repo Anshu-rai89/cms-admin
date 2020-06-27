@@ -31,3 +31,18 @@ Admin can Manage all contents from here .
 #### cookie-parser
 
 #### Connect-mongo ,express session
+
+
+
+
+# To use this Application 
+
+
+1 Git clone 
+2 cd cms-admin
+3 npm install
+4 node index.js
+
+
+
+### Happy Coding 
