@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <div>
+    <% if(blogs.length>0) {%>
+    <ul>
+      <% for (blog of blogs) {%>
+      <div class="card">
+        <div className="card-content grey-text text-darken-3">
+          <span class="card-title"> Author <%=blog.author%></span>
+  
+          <span style="margin-left: 270px; color: black;"
+            class="btn waves-effect yellow"
+          >
+            <%=blog.category%>
+          </span>
+   
+        <p><%=blog.content%></p>
+
+      </div>
+      <%}%>
+    </ul>
+    <%} else {%>
+    <h2>No blogs To show Please add one to see</h2>
+    <%}%>
+  </div>
+</html>
