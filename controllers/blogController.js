@@ -16,6 +16,9 @@ module.exports.create = async function (req, res) {
 // function to show blogs
 module.exports.showBlogs = async function (req, res) {
   try {
+    if (!req.isAuthenticated()) {
+      return res.redirect("/admin/signin");
+    }
     let blogs = await Blog.find({});
 
     return res.render("blog", {

@@ -1,20 +1,61 @@
-<div style="text-align: center;">
-  <h1 style="color: blueviolet;">Welcome Admin</h1>
-  <a href="/blog"><button>See all Blogs</button></a>
-  <a href="/admin/signout"><button style="float: right;">Signout</button></a>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <div style="text-align: center;">
+    <h1 style="color: blueviolet;">Welcome Admin</h1>
+    <a href="/blog"><button class="btn waves-effect">See all Blogs</button></a>
+    <a href="/admin/signout"
+      ><button class="btn waves-effect red" style="float: right;">
+        Signout
+      </button></a
+    >
 
-  <div>
-    <h2 style="color: cyan;">Add a Blog</h2>
-    <form action="/blog/create" method="POST">
-      <textarea name="content" rows="5" required></textarea>
-      <select name="category" required>
-        <option value="education">Education</option>
-        <option value="tech">Tech</option>
-        <option value="travel">travel</option>
-      </select>
+    <div>
+      <h2 style="color: cyan;">Add a Blog</h2>
+      <form action="/blog/create" method="POST">
+        <textarea
+          style="width: 60%; height: 100px;"
+          name="content"
+          rows="10"
+          required
+        ></textarea>
+        <select
+          style="
+            width: 30%;
+            background-color: grey;
+            display: block;
+            margin-left: 30%;
+          "
+          name="category"
+          required
+        >
+          <option value="education">Education</option>
+          <option value="tech">Tech</option>
+          <option value="travel">travel</option>
+        </select>
 
-      <input type="text" name="author" placeholder="author" required />
-      <input type="submit" value="add" />
-    </form>
+        <input
+          style="width: 60%;"
+          type="text"
+          name="author"
+          placeholder="author"
+          required
+        />
+        <input
+          style="margin-left: 20px;"
+          class="btn waves-effect blue"
+          type="submit"
+          value="add"
+        />
+      </form>
+    </div>
   </div>
-</div>
+</html>

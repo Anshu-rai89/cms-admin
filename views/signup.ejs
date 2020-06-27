@@ -1,25 +1,56 @@
-<div class="form-page" style="text-align: center;">
-  <h1 style="color: blueviolet;">Welcome to Admin Signup Page</h1>
-  <form action="/admin/create" method="POST">
-    <h2>Sign up</h2>
-    <div>
-      <input type="text" name="name" placeholder="Your Name" required />
-    </div>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <div class="form-page" style="text-align: center;">
+    <h1 style="color: blueviolet;">Welcome to Admin Signup Page</h1>
+    <form action="/admin/create" method="POST">
+      <h2>Sign up</h2>
+      <div>
+        <input
+          style="width: 40%;"
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          required
+        />
+      </div>
 
-    <div>
-      <input type="email" name="email" placeholder="Your Email" required />
-    </div>
-    <div>
-      <input type="password" name="password" placeholder="Password" required />
-    </div>
-    <div>
-      <input
-        type="password"
-        name="confirm_password"
-        placeholder="Confirm Password"
-        required
-      />
-    </div>
-    <input type="submit" value="Sign Up" />
-  </form>
-</div>
+      <div>
+        <input
+          style="width: 40%;"
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          required
+        />
+      </div>
+      <div>
+        <input
+          style="width: 40%;"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+      </div>
+      <div>
+        <input
+          style="width: 40%;"
+          type="password"
+          name="confirm_password"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+      <input class="btn waves-effect blue" type="submit" value="Sign Up" />
+    </form>
+  </div>
+</html>
